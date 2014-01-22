@@ -27,8 +27,7 @@ public class ApplicationFrame extends JFrame {
     }
 
     private void createComponents() {
-        this.add(createToolbarPrevPanel(), BorderLayout.WEST);
-        this.add(createToolbarNextPanel(), BorderLayout.EAST);
+        this.add(createToolbarPanel(), BorderLayout.NORTH);
         this.add(createImagePanel());
     }
 
@@ -50,15 +49,11 @@ public class ApplicationFrame extends JFrame {
         return panel;
     }
 
-    private JPanel createToolbarPrevPanel() {
+    private JPanel createToolbarPanel() {
         JPanel panel = new JPanel();
         panel.add(createPrevButton());
-        return panel;
-    }
-
-    private JPanel createToolbarNextPanel() {
-        JPanel panel = new JPanel();
         panel.add(createNextButton());
         return panel;
     }
+
 }
