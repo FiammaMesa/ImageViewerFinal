@@ -2,6 +2,7 @@ package imageviewer.UserInterface;
 
 import imageviewer.Control.ActionListenerFactory;
 import java.awt.BorderLayout;
+import java.awt.Color;
 import java.awt.HeadlessException;
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -34,12 +35,14 @@ public class ApplicationFrame extends JFrame {
     private JButton createPrevButton() {
         JButton button = new JButton("Previous Image");
         button.addActionListener(factory.createActionListener("Previous Image"));
+        button.setBackground(Color.WHITE);
         return button;
     }
 
     private JButton createNextButton() {
         JButton button = new JButton("Next Image");
         button.addActionListener(factory.createActionListener("Next Image"));
+        button.setBackground(Color.WHITE);
         return button;
     }
     
@@ -53,6 +56,7 @@ public class ApplicationFrame extends JFrame {
         JPanel panel = new JPanel();
         panel.add(createPrevButton());
         panel.add(createNextButton());
+        panel.setBackground(Color.BLACK);
         return panel;
     }
 

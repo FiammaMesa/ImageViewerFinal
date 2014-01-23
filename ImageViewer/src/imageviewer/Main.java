@@ -22,7 +22,7 @@ public class Main {
     public static void main(String[] args) {
         new Main().execute();
     }
-    private String filename = "C:\\Users\\Fiamma\\Pictures\\ImageViewer";
+    private String filename = "C:\\Users\\Fiamma\\Documents\\NetBeansProjects\\ImageViewer\\ImageViewer";
     private ApplicationFrame frame;
     private Map<String, Command> commandMap;
 
